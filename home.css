@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body, html {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .hero {
+    min-height: 100vh;
+    background: url("wallpaper/homePage3.jpg") no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: 100% 100%;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+  }
+  .navbar a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .navbar a:hover {
+    color: #f25f5c;
+  }
+  .brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content {
+    text-align: center;
+    padding: 100px 20px 60px;
+  }
+  .content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .content p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.5;
+  }
+  .btn {
+    padding: 15px 30px;
+    background-color: #f25f5c;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  .btn {
+    position: relative;
+    top: -70px; /* Geser tombol ke atas */
+  }  
+  .btn:hover {
+    background-color: #d94b48;
+  }
+  .btn-special {
+    padding: 15px 30px;
+    background-color: #f25f5c;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  .btn-special:hover {
+    background-color: #d94b48;
+  }
+  footer {
+    background-color: #111;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .nav-links {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+    .nav-links a {
+      margin: 8px 0;
+    }
+    .content h1 {
+      font-size: 36px;
+    }
+  }
+  
+  .pricelist {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+  }
+  
+  .pricelist img {
+    width: 1500px; /* Sesuaikan ukuran */
+    height: 790px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .map-link {
+    position: absolute;
+    bottom: 60px;  /* Jarak dari bawah container */
+    right: 180px;   /* Jarak dari sisi kanan container */
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    color: #007BFF;
+    text-decoration: none; 
+    font-size: 30px;
+  }
+
+  .map-link:hover {
+    color: #0056b3;    /* Warna berbeda ketika cursor menyentuh link */
+    text-decoration: underline;   /* Tampilkan garis bawah saat dihover */
+  }
+
+  .end {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: auto;
+    flex-direction: column;
+  }
+  
+  .end img {
+    width: 1521px; /* Sesuaikan ukuran */
+    height: 750px;
+    border-radius: 0px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+/* Styling dasar untuk semua slider */
+.slider {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Styling untuk gambar pada slider umum */
+.slider img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;  /* Awalnya gambar berada di luar layar */
+  transition: transform 0.5s ease-in-out, left 0.5s ease-in-out;
+}
+.slider img.active {
+  left: 0;
+}
+
+/* Gaya tombol navigasi (sama untuk kedua slider) */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+.nav-btn.left {
+  left: 10px;
+}
+.nav-btn.right {
+  right: 10px;
+}
+
+/* Slider testimoni */
+
+.testimoni {
+  width: 1520px;
+  height: 790px;
+}
+
+/* Slider Comments */
+
+.comments {
+  width: 1400px;
+  height: 700px;
+}
+
+/* Jika ingin mengubah tampilan tombol navigasi khusus untuk slider-comments */
+.comments .nav-btn {
+  font-size: 26px;
+}
