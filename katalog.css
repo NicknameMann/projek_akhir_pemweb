@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body, html {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .hero {
+    min-height: 100vh;
+    background: url("wallpaper/katalog.jpg") no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: 100% 100%;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+  }
+  .navbar a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .navbar a:hover {
+    color: #f25f5c;
+  }
+  .brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content {
+    text-align: center;
+    padding: 100px 20px 60px;
+  }
+  .content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .content p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.5;
+  }
+  footer {
+    background-color: #111;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .katalog {
+    display: flex;
+    flex-direction: column; /* Susun secara vertikal */
+    align-items: center;    /* Center-kan gambar secara horizontal */
+    gap: 20px;              /* Jarak antara gambar */
+  }
+  
+  .katalog img {
+    width: 1500px; /* Sesuaikan ukuran */
+    height: 750px;
+    border-radius: 8px; /* Opsi: beri efek sudut membulat */
+  }
+  .map-link {
+    position: absolute;
+    bottom: 60px;  /* Jarak dari bawah container */
+    right: 180px;   /* Jarak dari sisi kanan container */
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    color: #007BFF;
+    text-decoration: none; 
+    font-size: 30px;
+  }
+
+  .map-link:hover {
+    color: #0056b3;    /* Warna berbeda ketika cursor menyentuh link */
+    text-decoration: underline;   /* Tampilkan garis bawah saat dihover */
+  }
+
+  .end {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: auto;
+    flex-direction: column;
+  }
+  
+  .end img {
+    width: 1521px; /* Sesuaikan ukuran */
+    height: 750px;
+    border-radius: 0px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
